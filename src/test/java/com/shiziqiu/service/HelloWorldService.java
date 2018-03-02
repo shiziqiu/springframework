@@ -7,5 +7,5 @@ package com.shiziqiu.service;
  */
 public interface HelloWorldService {
 
-	void HelloWorld();
+	void helloWorld();
 }

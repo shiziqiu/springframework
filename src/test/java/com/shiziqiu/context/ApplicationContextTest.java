@@ -21,13 +21,13 @@ public class ApplicationContextTest {
 		 */
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("testioc.xml");
         HelloWorldService helloWorldService = (HelloWorldService) applicationContext.getBean("helloWorldService");
-        helloWorldService.HelloWorld();
+        helloWorldService.helloWorld();
 	}
 	
 	@Test
 	public void TestPostBeanProcessor() throws Exception {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("testioc-postbeanprocessor.xml");
 		HelloWorldService helloWorldService = (HelloWorldService) applicationContext.getBean("helloWorldService");
-		helloWorldService.HelloWorld();
+		helloWorldService.helloWorld();
 	}
 }

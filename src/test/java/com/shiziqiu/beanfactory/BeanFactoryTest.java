@@ -51,7 +51,7 @@ public class BeanFactoryTest {
 		// 3 获取bean，这里从工厂里找到对应类的相关信息，然后创建类的实例，如果类有其他引用，就实例化其他引用，然后调用相关方法
 		HelloWorldService helloWorldService = (HelloWorldService) beanFactory
 				.getBean("helloWorldService");
-		helloWorldService.HelloWorld();
+		helloWorldService.helloWorld();
 	}
 
 	@Test
@@ -86,7 +86,7 @@ public class BeanFactoryTest {
 		 */
 		HelloWorldService helloWorldService = (HelloWorldService) beanFactory
 				.getBean("helloWorldService");
-		helloWorldService.HelloWorld();
+		helloWorldService.helloWorld();
 	}
 
 	@Test
@@ -116,7 +116,7 @@ public class BeanFactoryTest {
 		 * 4.获取bean
 		 */
 		HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
-		helloWorldService.HelloWorld();
+		helloWorldService.helloWorld();
 
 	}
 

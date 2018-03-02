@@ -11,7 +11,7 @@ public class HelloWorldServiceImpl implements HelloWorldService{
 	private String text;
 	private String age;
 
-	public void HelloWorld() {
+	public void helloWorld() {
 		// outputService.output(text,age);
 		System.out.println(text + "===" + age);
 	}
